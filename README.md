@@ -68,7 +68,7 @@ This project is designed for hackathons, smart city solutions, emergency respons
 
 # ⚙️ Installation & Setup
   * 1️⃣ Clone the Repository
-    git clone https://github.com/parvkajla/real-time-incident-reporting.git
+    git clone [https://github.com/parvkajla/real-time-incident-reporting.git](https://github.com/parvkajla/real-time-incident-reporting.git)
     cd real-time-incident-reporting
   * 2️⃣ Backend Setup
     * Install Dependencies
