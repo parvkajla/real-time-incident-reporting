@@ -132,5 +132,6 @@ This project is designed for hackathons, smart city solutions, emergency respons
   * Campus Safety Systems
 # 👨‍💻 Author
   * Parv Kajla
+  * Pari Rastogi 
       BTech CSE (AI & ML)
       Galgotias University
