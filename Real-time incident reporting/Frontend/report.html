@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Report Incident | Real-Time Incident Reporting</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Leaflet -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+<div class="container card">
+  <h1 style="text-align:center;margin-bottom:20px;">🚨 Report an Incident</h1>
+
+  <form id="incidentForm">
+
+    <label>Incident Type</label>
+    <select id="type" required>
+      <option value="">Select Type</option>
+      <option>Accident</option>
+      <option>Fire</option>
+      <option>Medical Emergency</option>
+      <option>Crime</option>
+      <option>Infrastructure Failure</option>
+      <option>Other</option>
+    </select>
+
+    <label>Description</label>
+    <textarea id="description" required></textarea>
+
+    <label>Severity</label>
+    <select id="severity" required>
+      <option value="">Select Severity</option>
+      <option>Low</option>
+      <option>Medium</option>
+      <option>High</option>
+      <option>Critical</option>
+    </select>
+
+    <label>Detected Location</label>
+    <input id="location" type="text" readonly required />
+
+    <label>Confirm / Adjust Location</label>
+    <div id="map" style="height:300px;border-radius:12px;"></div>
+
+    <button class="submit-btn" type="submit">
+      📢 Submit Incident
+    </button>
+
+  </form>
+</div>
+
+<script src="js/report.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+:root {
+  --primary: #2563eb;
+  --secondary: #1e293b;
+  --bg: #f8fafc;
+  --card: #ffffff;
+  --accent: #22c55e;
+  --danger: #ef4444;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--secondary);
+}
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(135deg, #1d2671, #c33764);
+  color: white;
+  padding: 1.2rem 2rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+/* Layout */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.08);
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero p {
+  margin: 1rem 0 2.5rem;
+  color: #475569;
+}
+
+/* Buttons */
+.big-btn {
+  background: var(--primary);
+  color: white;
+  padding: 1.4rem 3rem;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.big-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Form */
+label {
+  font-weight: 600;
+  margin-top: 1rem;
+  display: block;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 0.4rem;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+}
+
+.submit-btn {
+  margin-top: 1.5rem;
+  background: var(--accent);
+  color: white;
+  padding: 1rem;
+  border: none;
+  width: 100%;
+  font-size: 1.1rem;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 1rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+  background: #f1f5f9;
+}
+
+/* Severity badges */
+.badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  color: white;
+  font-weight: bold;
+}
+
+.Low { background: #22c55e; }
+.Medium { background: #eab308; }
+.High { background: #f97316; }
+.Critical { background: #ef4444; }
+
+/* Map */
+#map {
+  height: 320px;
+  margin-top: 10px;
+  border-radius: 14px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}

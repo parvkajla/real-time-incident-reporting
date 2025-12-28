@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin Incident Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+<div class="navbar">
+  🚨 Admin Incident Dashboard
+</div>
+
+<div class="container card">
+  <table class="incident-table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Location</th>
+        <th>Severity</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+
+    <!-- 🔥 IMPORTANT -->
+    <tbody id="incidentTableBody"></tbody>
+  </table>
+</div>
+
+<script src="js/dashboard.js"></script>
+</body>
+</html>
